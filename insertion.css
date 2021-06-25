@@ -1,0 +1,84 @@
+*{
+    background-color: #02130a;
+}
+a{
+    text-decoration: none;
+}
+.heading{
+    text-align: center;
+    margin-top: 50px;
+    font-size: xxx-large;
+    color: red;
+}
+h1 {
+    text-align: center;
+    display: block;
+    margin-top: 100px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    background: #02130a;
+    color: #ffCC33;
+    padding: 0 0 0 20px;
+}
+.SortingAlgos{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.sortalgo{
+    border: 2px solid #b8b4b4;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    color: #ffCC33;
+    background: rgb(64 84 80);
+    font-size: x-large;
+
+}
+.NewArr{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 10vh;
+    padding: 38px;
+    size: 100px;
+}
+.arr{
+    border-color: #ff1717;
+    background-color: rgb(68, 160, 141);
+    text-align: center;
+    padding-top: 12px;
+    font-size: 30px;
+}
+li{
+    list-style: none;
+    border: 2px solid #b8b4b4;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 16px;
+    width: 50px;
+}
+.arrayelement{
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    text-align: center;
+}
+#input{
+    width: 80px;
+}
+
+.bbl{
+    background-color: blue;
+    border: 2px solid #b8b4b4;
+    margin-right: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 30px;
+}

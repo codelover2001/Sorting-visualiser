@@ -1,0 +1,52 @@
+*{
+    background-image: url("backgroundimage.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.heading{
+    text-align: center;
+    margin-top: 50px;
+    font-size: xxx-large;
+    color: red;
+}
+.welcome{
+    text-align: center;
+    margin-top: -38px;
+    font-size: xxx-large;
+    color: red;
+}
+.welcome1{
+    text-align: center;
+    font-size: xxx-large;
+    color: red;
+    padding-bottom: 5px;
+}
+.simple{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: -51px;
+}
+.advanced{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.sortalgo{
+    font-size: xx-large;
+    color: #fffcfc;
+    border: 2px solid #b8b4b4;
+    margin-right: 20px;
+    padding: 15px 84px;
+    border-radius: 20px;
+    background: rgb(68 62 115);
+}
+#simple{
+    margin-right: 100px;
+}
