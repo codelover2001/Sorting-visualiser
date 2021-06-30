@@ -1,7 +1,8 @@
 let vec = [];
+let arr = [];
 let bubble = document.querySelector('.bubble');
-let timeout = 500;
-let n = 6;
+let timeout = 400;
+let n = 8;
 let flag = 0;
 function Reset() {
     window.location.reload();
@@ -22,14 +23,27 @@ function GenerateArray() {
         element.setAttribute('class', 'arr');
         element.innerHTML = val;
         NewArray.append(element);
-        console.log(val);
     }
 }
 async function BubbleSortArray() {
-    if (flag > 1)
+    if (flag != 1)
         return;
     flag = 2;
-    for (let i = 0; i < n - 1; i++) {
+    for (let i = 0; i < n; i++)
+        arr.push(vec[i]);
+    arr.sort();
+
+    for (let i = 0; i < n; i++) {
+        window.scrollBy(0, 2000);
+        let f = 0;
+        for (let j = 0; j < n; j++) {
+            if (vec[j] != arr[j]) {
+                f = 1;
+                break;
+            }
+        }
+        if (f == 0)
+            break;
         for (let j = 0; j < n - i - 1; j++) {
             let ele1 = document.getElementById((n * i) + (j + 1));
             let ele2 = document.getElementById((n * i) + (j + 2));
