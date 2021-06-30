@@ -1,7 +1,7 @@
 let vec = [];
 let bubble = document.querySelector('.bubble');
 let timeout = 500;
-let n = 6;
+let n = 8;
 let flag = 0;
 function Reset() {
     window.location.reload();
@@ -26,14 +26,20 @@ function GenerateArray() {
     }
 }
 async function InsertionSortArray() {
-    if (flag > 1)
+    if (flag != 1)
         return;
     flag = 2;
+
     for (let i = 0; i < n; i++) {
+        window.scrollBy(0, 2000);
+
+        for (let j = 0; j <= i; j++)
+            document.getElementById((n * i + j + 1)).style.backgroundColor = "rgb(235, 7, 219)";
+
+
         for (let j = i - 1; j >= 0; j--) {
             let ele1 = document.getElementById((n * i) + (j + 1));
             let ele2 = document.getElementById((n * i) + (j + 2));
-            ele1.style.backgroundColor = "red";
             ele2.style.backgroundColor = "red";
             await new Promise((resolve) =>
                 setTimeout(() => {
@@ -47,6 +53,11 @@ async function InsertionSortArray() {
                 ele1.innerHTML = vec[j];
                 ele2.innerHTML = vec[j + 1];
             }
+            else {
+                ele1.style.backgroundColor = "rgb(235, 7, 219)";
+                ele2.style.backgroundColor = "rgb(235, 7, 219)";
+                break;
+            }
             await new Promise((resolve) =>
                 setTimeout(() => {
                     resolve();
@@ -55,9 +66,8 @@ async function InsertionSortArray() {
             ele1.style.backgroundColor = "rgb(235, 7, 219)";
             ele2.style.backgroundColor = "rgb(235, 7, 219)";
         }
-        for (let j = i + 1; j < n; j++)
-            document.getElementById((n * i + j + 1)).style.backgroundColor = "rgb(68, 160, 141)";
-
+        if (i == n - 1)
+            break;
         let NewArray = document.createElement('div');
         NewArray.setAttribute('id', -(i + 1));
         NewArray.setAttribute('class', 'NewArr');
